@@ -21,19 +21,19 @@
     <div class="flex items-start mt-6">
         <img src="image/Navbar-logo.svg" alt="Uni4Edu Logo" class="w-15 h-auto ml-[5rem]">
         <div class="items-center">
-            <nav class="flex p-4 bg-white w-full">
-            <ul class="flex space-x-6 ml-10 hidden lg:flex font-semibold text-md nav-hide:hidden">
+            <nav class="flex p-4 bg-white w-full justify-between">
+            <ul class="space-x-6 ml-10 hidden lg:flex font-semibold text-md nav-hide:hidden">
                 <li><a href="#">Universities</a><img src="/image/image-dropdown.svg" alt="Dropdown Icon" class="inline-flex w-7 h-auto"></li>
                 <li><a href="#">Masters</a></li>
                 <li><a href="#">Language Schools</a><img src="/image/image-dropdown.svg" alt="Dropdown Icon" class="inline-flex w-7 h-auto"></li>
                 <li><a href="#">Summer Schools</a><img src="/image/image-dropdown.svg" alt="Dropdown Icon" class="inline-flex w-7 h-auto"></li>
                 <li><a href="#">High School</a></li>
             </ul>
-                <div class="flex nav-hide:hidden items-center pl-[8rem] mx-auto">
-                    <img src="image/search-icon.svg" alt="User Icon" class="w-6 h-auto">
+                <div class="flex nav-hide:hidden items-center">
+                    <img src="image/search-icon.svg" alt="User Icon" class="w-6 h-auto mr-4">
                     <a href="#" class="bg-[#4EC9DF] font-semibold py-2 px-6 rounded-lg">Login</a>
                 </div>
-                <div class="hidden nav-hide:flex items-center ml-auto gap-4">
+                <div class="hidden nav-hide:flex items-center gap-4">
                     <img src="image/search-icon.svg" alt="User Icon" class="w-6 h-auto">
                     <div class="inline-flex items-center">
                         <img src="/image/great-britain.svg" alt="Great Britain Flag" class="w-8 h-auto rounded-lg">
@@ -45,16 +45,19 @@
             </nav>
         </div>
     </div>
-    <div class="relative">
-        <img src="/image/first-background-Image.jpeg" alt="background image 1">
-        <div class="absolute top-[8rem] left-[10rem]">
-            <h1 class="text-5xl text-white font-bold">Find Your Perfect University,<br> Language School or Summer <br>Schools Program</h1>
-            <p class="text-white text-2xl pt-5">Uni4edu simplifies the journey to studying abroad by <br>bringing top institutions worldwide into a single digital<br> platform. Manage your entire process—from school <br>selection to application—directly within the system and <br>achieve your academic and career goals online.</p>
-           <div class="pt-10">
-            <a href="#" class="bg-[#4ec9df] text-white text-md font-semibold rounded-lg py-3 px-5">Explore Programs</a>
-            <a href="#" class="bg-white text-[#4ec9df] border border-[#4ec9df] rounded-lg py-3 px-5 hover:opacity-80 font-light ml-4">Get Free Advice</a>
+    <div class="relative bg-cover bg-center bg-no-repeat h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-screen sm:bg-top md:bg-center" style="background-image: url('/image/first-background-Image.jpeg');">
+        <div class="absolute top-8 left-4 sm:top-16 sm:left-8 md:top-24 md:left-16 lg:top-32 lg:left-40 px-4 sm:px-0">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-bold leading-tight">
+                Find Your Perfect University,<br class="hidden sm:block"> Language School or Summer <br class="hidden sm:block">Schools Program
+            </h1>
+            <p class="text-white text-sm sm:text-base md:text-lg lg:text-2xl pt-3 sm:pt-5 max-w-4xl">
+                Uni4edu simplifies the journey to studying abroad by <br class="hidden md:block">bringing top institutions worldwide into a single digital<br class="hidden md:block"> platform. Manage your entire process—from school <br class="hidden md:block">selection to application—directly within the system and <br class="hidden md:block">achieve your academic and career goals online.
+            </p>
+           <div class="pt-6 sm:pt-10 mb-8 sm:mb-[5rem] flex flex-col sm:flex-row gap-3 sm:gap-0">
+            <a href="#" class="bg-[#4ec9df] text-white text-sm sm:text-md font-semibold rounded-lg py-2 px-4 sm:py-3 sm:px-5 text-center">Explore Programs</a>
+            <a href="#" class="bg-white text-[#4ec9df] border border-[#4ec9df] rounded-lg py-2 px-4 sm:py-3 sm:px-5 hover:opacity-80 font-light text-center sm:ml-4">Get Free Advice</a>
            </div>
-                <div class="relative mt-10 bg-blue-500/20 backdrop-blur-md px-30 py-5 rounded-xl">
+                <div class="relative mt-10 bg-blue-500/20 backdrop-blur-md pr-[7rem] py-8 rounded-xl nav-hide:hidden">
                     <div class="ml-5 rounded-b-xl mr-10">
                         <div class="flex w-full">
                             <a href="#" class="bg-blue-700 text-white rounded-t-lg py-3 px-5">University Programs</a>
@@ -62,31 +65,31 @@
                             <a href="#" class="bg-white text-gray-500 hover:text-black rounded-t-lg py-3 px-5">Summer Schools</a>
                         </div>
                         <div class="flex">
-                            <div class="bg-white">
-                                <h6 class="text-gray-500">Location</h6>
-                                <div class="flex rounded-b-xl">
-                                    <input type="text" placeholder="Select Location" rounded-bl-xl>
+                            <div class="bg-white w-[15rem] rounded-bl-xl">
+                                <h6 class="text-gray-500 p-3 pb-1">Location</h6>
+                                <div class="flex p-3 pt-0">
+                                    <input type="text" placeholder="Select Location" class="flex-1 outline-none">
                                     <img src="/image/image-dropdown.svg" alt="Dropdown Icon" class="w-4 h-auto bg-white">
                                 </div>
                             </div>
-                            <div class="bg-white">
-                                <h6 class="text-gray-500">Location</h6>
-                                <div class="flex">
-                                    <input type="text" placeholder="Select Location">
+                            <div class="bg-white w-[15rem]">
+                                <h6 class="text-gray-500 p-3 pb-1">Institution</h6>
+                                <div class="flex p-3 pt-0">
+                                    <input type="text" placeholder="Select Institution" class="flex-1 outline-none">
                                     <img src="/image/image-dropdown.svg" alt="Dropdown Icon" class="w-4 h-auto bg-white">
                                 </div>
                             </div>
-                            <div class="bg-white">
-                                <h6 class="text-gray-500">Location</h6>
-                                <div class="flex">
-                                    <input type="text" placeholder="Select Location">
+                            <div class="bg-white w-[15rem]">
+                                <h6 class="text-gray-500 p-3 pb-1">Discipline</h6>
+                                <div class="flex p-3 pt-0">
+                                    <input type="text" placeholder="Select Discipline" class="flex-1 outline-none">
                                     <img src="/image/image-dropdown.svg" alt="Dropdown Icon" class="w-4 h-auto bg-white">
                                 </div>
                             </div>
-                            <div class="bg-white">
-                                <h6 class="text-gray-500">Location</h6>
-                                <div class="flex">
-                                    <input type="text" placeholder="Select Location">
+                            <div class="bg-white w-[15rem] rounded-br-xl">
+                                <h6 class="text-gray-500 p-3 pb-1">Program Level</h6>
+                                <div class="flex p-3 pt-0">
+                                    <input type="text" placeholder="Select Program Level" class="flex-1 outline-none">
                                     <img src="/image/image-dropdown.svg" alt="Dropdown Icon" class="w-4 h-auto bg-white">
                                 </div>
                             </div>
@@ -95,5 +98,10 @@
             </div>
         </div>
     </div>
+    <!-- <div hidden nav-hide:flex>
+        <input type="radio" name="university-program" id="Uni">
+        <label for="Uni">University Programs</label>
+    </div> -->
+    
 </body>
 </html>
